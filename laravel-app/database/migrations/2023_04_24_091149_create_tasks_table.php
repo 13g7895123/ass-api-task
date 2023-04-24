@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45);
-            $table->string('cate', 45);
+            $table->enum('cate', ['web' ,'python']);
             $table->enum('status', ['not yet start', 'ongoing', 'finished']);
             $table->integer('amount');
             $table->date('start_contact_date');
