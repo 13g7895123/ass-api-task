@@ -20,3 +20,5 @@ p:
 	docker exec ass-api-task bash -c "chmod -R 757 storage"
 	docker exec ass-api-task bash -c "chmod -R 757 database"
 	docker exec ass-api-task bash -c "chmod -R 757 app"
+bash:
+	docker exec -it ass-api-task bash
